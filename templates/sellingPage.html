@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+{%block body%}
+<link rel="stylesheet" href="../static/styles-selling.css">
+<div class="container">
+    <div class="row">
+      <div class="signin-signup">
+        <form action="/itemSubmit.html" class="sign-in-form" method="POST">
+          <h2 class="title">ADD ITEM</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input class="sign-username" type="text" placeholder="Item name" name="item-name">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input class="sign-email"  placeholder="Price" name="item-price">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input class="password" placeholder="Description" name="item-discription">
+          </div>
+          <button type="submit" class="btn btn-success" id="submit" >Add item</button>
+        </form>
+{%endblock %}

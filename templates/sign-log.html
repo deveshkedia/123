@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../static/styles-sign-log.css" />
+  <title>Log In & Sign up Form</title>
+  <link rel="icon" href="../static/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="forms-container">
+
+      <div class="signin-signup">
+        <form action="#" method="POST" class="sign-in-form">
+          <h2 class="title">Sign up</h2>
+
+          <div class="input-field sign-user-field">
+            <i class="fas fa-user"></i>
+            <input class="sign-username" type="text" placeholder="Username" name="sign-username">
+          </div>
+
+          <div class="input-field sign-email-field">
+            <i class="fas fa-envelope"></i>
+            <input class="sign-email" type="email" placeholder="Email" name="sign-email">
+          </div>
+
+          <div class="input-field sign-pass-field">
+            <i class="fas fa-lock"></i>
+            <input class="password" type="password" placeholder="Password" name="sign-password">
+            <div class="parentCircle">
+              <div class="circle" id="circle"></div>
+              <div class="circle" id="circle"></div>
+              <div class="circle" id="circle"></div>
+              <div class="circsle" id="circle"></div>
+              <div class="circle" id="circle"></div>
+              <div class="circle" id="circle"></div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn submit wakanda" id="submit" onclick="signUp()" disabled>Sign Up</button>
+
+          <ul>
+            <li class="error error1"></li>
+            <li class="error error2"></li>
+            <li class="error error3"></li>
+          </ul>
+
+        </form>
+
+        <form action="#" class="sign-up-form">
+          <h2 class="title">Login</h2>
+          </h2>
+          <div class="input-field log-user-field">
+            <i class="fas fa-user"></i>
+            <input class="log-user" type="text" placeholder="Username / Email">
+          </div>
+          <p class="input-field log-pass-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="log-pass" placeholder="Password" />
+            <button type="submit" class="btn solid log-sub wakanda" disabled>Log In</button>
+          </p>
+          <ul class = "log-errors">
+            <li class="error log-error"></li>
+            <li class="error log-error1"></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+
+      <div class="panel left-panel">
+
+        <div class="content">
+          <h3 class="have-account">Already have an account ?</h3>
+          <button class="btn transparent SIGNUP" id="sign-up-btn">
+            Log In
+          </button>
+        </div>
+      </div>
+
+      <div class="panel right-panel">
+        <div class="content">
+          <button class="btn transparent SIGNUP" id="sign-in-btn">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/main.js"></script>
+</body>
+
+</html>
