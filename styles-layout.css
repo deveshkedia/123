@@ -1,0 +1,61 @@
+.navbar-brand {
+  font-family: Pacifico, cursive;
+}
+
+nav form {
+  width: 70%;
+}
+
+nav form input {
+  width: 90% !important;
+}
+
+.navbar-brand {
+  font-size: 2em !important;
+}
+
+.nav-link {
+  font-size: 1.5em !important;
+}
+
+nav:nth-child(2) {
+  margin-top: 66px;
+}
+
+.nav-link img {
+  height: 60px;
+  width: 50px;
+}
+
+a.text-danger:hover {
+  color: black !important;
+}
+.form-control me-2{
+  align-items: left;
+}
+
+a.hover:hover {
+  text-decoration: wavy underline #5bc0de;
+}
+
+@media (min-width: 992px)
+{
+  a.hover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #5bc0de;
+    border-radius: 32px;
+    transition: all .4s;
+  }
+
+  a.hover:hover::after {
+    width: 110%;
+    transition: all .4s;
+  }
+
+  a.hover:hover {
+    text-decoration: none;
+  }
+}
